@@ -1055,4 +1055,40 @@ textarea.contact-input {
   .copyright,
   .footer-list { margin-inline: 0; }
 
+  .card-title {
+  color: #ffffff;
+  text-shadow: 0 4px 12px rgba(0,0,0,0.9);
+}
+
+.card-subtitle {
+  color: #ff4d4d;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.8);
+}
+.portfolio-card {
+  position: relative;
+}
+
+.portfolio-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.75),
+    rgba(0, 0, 0, 0.35)
+  );
+  border-radius: inherit;
+}
+
+.portfolio-card .card-content {
+  position: relative;
+  z-index: 2;
+}
+
+.card-title,
+.card-subtitle {
+  color: #ffffff;
+}
+
+
 }
