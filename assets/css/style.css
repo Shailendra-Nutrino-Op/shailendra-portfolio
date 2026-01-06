@@ -1089,6 +1089,77 @@ textarea.contact-input {
 .card-subtitle {
   color: #ffffff;
 }
+/* Portfolio Card Base */
+.portfolio-card {
+  position: relative;
+  display: block;
+  background-size: cover;
+  background-position: center;
+  border-radius: 14px;
+  overflow: hidden;
+}
+
+/* DARK OVERLAY (MOST IMPORTANT) */
+.portfolio-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+}
+
+/* Content on top of overlay */
+.card-content {
+  position: relative;
+  z-index: 2;
+  padding: 18px;
+  background: rgba(0, 0, 0, 0.55);
+  border-radius: 12px;
+  max-width: 90%;
+}
+
+/* Subtitle (Tech Stack) */
+.card-subtitle {
+  color: #00e5ff;           /* professional accent */
+  font-size: 0.9rem;
+  font-weight: 600;
+  line-height: 1.4;
+  margin-bottom: 8px;
+  text-shadow: 0 1px 4px rgba(0,0,0,0.8);
+}
+
+/* Title */
+.card-title {
+  color: #ffffff;
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  text-shadow: 0 2px 6px rgba(0,0,0,0.9);
+}
+
+/* View Project link */
+.btn-link {
+  color: #ffffff;
+  font-weight: 600;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.8);
+}
+
+/* MOBILE OPTIMIZATION */
+@media (max-width: 768px) {
+  .card-content {
+    background: rgba(0, 0, 0, 0.75);
+    padding: 16px;
+  }
+
+  .card-title {
+    font-size: 1.1rem;
+  }
+
+  .card-subtitle {
+    font-size: 0.85rem;
+  }
+}
+
 
 
 }
