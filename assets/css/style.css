@@ -1130,12 +1130,15 @@ textarea.contact-input {
 
 /* Title */
 .card-title {
+  display: inline-block;
+  background: rgba(0, 0, 0, 0.65); /* black light background */
+  padding: 6px 12px;
+  border-radius: 8px;
   color: #ffffff;
-  font-size: 1.2rem;
   font-weight: 700;
-  margin-bottom: 10px;
-  text-shadow: 0 2px 6px rgba(0,0,0,0.9);
+  line-height: 1.4;
 }
+
 
 /* View Project link */
 .btn-link {
