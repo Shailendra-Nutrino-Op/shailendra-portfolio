@@ -13,6 +13,7 @@
 /*-----------------------------------*\
   #CUSTOM PROPERTY
 \*-----------------------------------*/
+body { outline: 5px solid red !important; }
 
 :root {
 
